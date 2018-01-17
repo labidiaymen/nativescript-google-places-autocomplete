@@ -1,10 +1,11 @@
 
-# Nativescript Google Places Autocomplete
-[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete@2x.png)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
 
-[downloads-image]:http://img.shields.io/npm/dm/nativescript-google-places-autocomplete.svg
+# Nativescript Google Places Autocomplete
+[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete.svg)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
+[![Twitter Follow][twitter-image]][twitter-url]
 
 [twitter-image]:https://img.shields.io/twitter/follow/labidiaymen.svg?style=social&label=Follow%20me
+[twitter-url]:https://twitter.com/labidiaymen
 
 
 Add location autocomplete to your Nativescript application
