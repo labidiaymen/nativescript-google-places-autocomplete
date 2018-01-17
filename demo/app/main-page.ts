@@ -31,7 +31,6 @@ class HelloWorldModel extends Observable {
                 let list = <ListView>this.page.getViewById("places_list");
                 googlePlacesAutocomplete.search(params)
                     .then((places: any) => {
-                        console.log(JSON.stringify(places));
                         this.items = [];
                         this.items = places;
                         this.set('items', this.items);
@@ -50,7 +49,6 @@ class HelloWorldModel extends Observable {
     getPlace(place) {
 
         googlePlacesAutocomplete.getPlaceById(place.placeId).then((place) => {
-            console.log(JSON.stringify(place));
             dialogs.alert("Frmatted address :" + place.formattedAddress + "\n latitude: " + place.latitude + "\n longitude: " + place.longitude)
                 .then(function () { });
         }, error => {

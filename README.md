@@ -1,7 +1,8 @@
 
 
 # Nativescript Google Places Autocomplete
-[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete.svg)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
+
+Ò[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete.svg)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
 [![Twitter Follow][twitter-image]][twitter-url]
 
 [twitter-image]:https://img.shields.io/twitter/follow/labidiaymen.svg?style=social&label=Follow%20me
@@ -10,6 +11,7 @@
 
 Add location autocomplete to your Nativescript application
 
+![](https://user-images.githubusercontent.com/3775924/35034560-e0519724-fb6e-11e7-857c-0caaa6499d6a.gif)
 ## Prerequisites 
 
 Create and grap your Api key from  [https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en)
