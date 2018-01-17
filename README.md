@@ -1,5 +1,11 @@
 
 # Nativescript Google Places Autocomplete
+[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete@2x.png)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
+
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-google-places-autocomplete.svg
+
+[twitter-image]:https://img.shields.io/twitter/follow/labidiaymen.svg?style=social&label=Follow%20me
+
 
 Add location autocomplete to your Nativescript application
 
@@ -15,7 +21,7 @@ tns plugin add nativescript-google-places-autocomplete
 
 ## Usage 
 	
-	```javascript
+```javascript
     import { GooglePlacesAutocomplete } from 'nativescript-google-places-autocomplete';
 	
 	let API_KEY = "your_api_Key";
@@ -33,8 +39,8 @@ tns plugin add nativescript-google-places-autocomplete
         }, error => {
             console.log(error)
         })        
-    ```
-    Plugin Auther : [Aymen Labidi](https://aymen.co)
+```
+Plugin Auther : [Aymen Labidi](https://aymen.co)
 
     
 ## License
