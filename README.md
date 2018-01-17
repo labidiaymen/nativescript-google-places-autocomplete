@@ -2,7 +2,7 @@
 
 # Nativescript Google Places Autocomplete
 
-Ò[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete.svg)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
+[![npm version](https://badge.fury.io/js/nativescript-google-places-autocomplete.svg)](https://badge.fury.io/js/nativescript-google-places-autocomplete)
 [![Twitter Follow][twitter-image]][twitter-url]
 
 [twitter-image]:https://img.shields.io/twitter/follow/labidiaymen.svg?style=social&label=Follow%20me
