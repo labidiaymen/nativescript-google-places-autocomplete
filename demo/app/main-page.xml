@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
+  xmlns:ui="nativescript-google-geocoder">
+  <StackLayout class="p-20">
+    <TextField  id="searchField" returnKeyType="done" padding="8" hint="Search places" width="90%"/>
+    <ListView id="places_list" items="{{ items }}" itemTap="listViewItemTap">
+      <ListView.itemTemplate padding="8">
+        <Label text="{{ description }}" textWrap="true" class="title" />
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
