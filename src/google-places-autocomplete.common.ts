@@ -10,9 +10,10 @@ export class Common extends Observable {
     super();
     this.apikey = key;
   }
-  public search(terms: string) {
+  public search(terms: string, countryISO: string = '') {
     let requestUrl = PLACES_API_URL +
       "?input=" + encodeURIComponent(terms.trim()) +
+      (countryISO ? "&components=country:" + countryISO : '') +
       "&types=geocode&key=" +
       this.apikey;
     return http
