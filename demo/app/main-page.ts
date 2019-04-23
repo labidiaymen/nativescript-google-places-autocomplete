@@ -29,7 +29,7 @@ class HelloWorldModel extends Observable {
             .subscribe(
             (params: any) => {
                 let list = <ListView>this.page.getViewById("places_list");
-                googlePlacesAutocomplete.search(params)
+                googlePlacesAutocomplete.search(params, 'us')
                     .then((places: any) => {
                         this.items = [];
                         this.items = places;
