@@ -14,7 +14,7 @@ export class Common extends Observable {
     let requestUrl = PLACES_API_URL +
       "?input=" + encodeURIComponent(terms.trim()) +
       (countryISO ? "&components=country:" + countryISO : '') +
-      "&types=geocode&key=" +
+      "&key=" +
       this.apikey;
     return http
       .getJSON(requestUrl)
