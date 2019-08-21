@@ -1,5 +1,5 @@
 import { Observable } from 'tns-core-modules/data/observable';
-import { GooglePlacesAutocomplete } from '../..';
+import { GooglePlacesAutocomplete } from 'nativescript-google-places-autocomplete';
 
 import { Subject } from "rxjs";
 import { TextField } from "tns-core-modules/ui/text-field";
