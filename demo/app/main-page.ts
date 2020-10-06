@@ -1,6 +1,6 @@
 import { GooglePlacesAutocomplete } from 'nativescript-google-places-autocomplete';
 import { Subject } from "rxjs";
-import { Observable, TextField, ListView, EventData, Page, Dialogs}
+import { Observable, TextField, ListView, EventData, Page, Dialogs} from '@nativescript/core';
 
 let API_KEY = "AIzaSyAOYKrNk8B72AcOnF9SD3WjcemZHmuUcRY";
 let googlePlacesAutocomplete = new GooglePlacesAutocomplete(API_KEY);;
