@@ -4,7 +4,7 @@
     "nativescript-theme-core": "^1.0.4",
     "nativescript-unit-test-runner": "^0.3.4",
     "rxjs": "^5.5.6",
-    "@nativescript/core": "7.0.0",
+    "@nativescript/core": "~7.0.3",
     "@nativescript/webpack": "3.0.0"
   },
   "devDependencies": {
@@ -28,6 +28,7 @@
     "uglifyjs-webpack-plugin": "~1.1.6"
   },
   "scripts": {
+    "clean": "npx rimraf hooks node_modules package-lock.json platforms",
     "build.plugin": "cd ../src && npm run build",
     "ci.tslint": "npm i && tslint --config '../tslint.json' 'app/**/*.ts' --exclude '**/node_modules/**'"
   },
