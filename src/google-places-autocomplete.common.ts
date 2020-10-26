@@ -1,8 +1,5 @@
-import { Observable } from 'tns-core-modules/data/observable';
 import { PLACES_API_URL, PLACES_DETAILS_API_URL_places } from './google-places-autocomplete.static';
-import * as app from 'tns-core-modules/application';
-import * as dialogs from 'tns-core-modules/ui/dialogs';
-import * as http from 'tns-core-modules/http';
+import { Http, Observable} from "@nativescript/core"
 
 export class Common extends Observable {
   private apikey: string;
@@ -16,7 +13,7 @@ export class Common extends Observable {
       (countryISO ? "&components=country:" + countryISO : '') +
       "&types=" + types + "&key=" +
       this.apikey;
-    return http
+    return Http
       .getJSON(requestUrl)
       .then(function (data: any) {
         let items = []
@@ -34,7 +31,7 @@ export class Common extends Observable {
     let requestUrl = PLACES_DETAILS_API_URL_places +
       "?placeid=" + placeId + "&key=" +
       this.apikey;
-    return http
+    return Http
       .getJSON(requestUrl)
       .then((data: any) => {
         let place: any = {}

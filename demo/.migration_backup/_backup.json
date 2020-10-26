@@ -1,0 +1,11 @@
+{
+	"name": "migration",
+	"paths": [
+		"package.json",
+		"karma.conf.js",
+		"app/package.json",
+		"package.json",
+		"karma.conf.js",
+		"app/package.json"
+	]
+}

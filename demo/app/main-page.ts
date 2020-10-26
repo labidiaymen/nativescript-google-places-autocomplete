@@ -1,16 +1,6 @@
-import { Observable } from 'tns-core-modules/data/observable';
 import { GooglePlacesAutocomplete } from 'nativescript-google-places-autocomplete';
-
 import { Subject } from "rxjs";
-import { TextField } from "tns-core-modules/ui/text-field";
-import { ListView } from "tns-core-modules/ui/list-view";
-import {
-    EventData,
-} from "tns-core-modules/data/observable";
-import { Page } from "tns-core-modules/ui/page";
-import * as observable from 'tns-core-modules/data/observable';
-import * as pages from 'tns-core-modules/ui/page';
-import * as dialogs from 'tns-core-modules/ui/dialogs';
+import { Observable, TextField, ListView, EventData, Page, Dialogs} from '@nativescript/core';
 
 let API_KEY = "AIzaSyAOYKrNk8B72AcOnF9SD3WjcemZHmuUcRY";
 let googlePlacesAutocomplete = new GooglePlacesAutocomplete(API_KEY);;
@@ -49,7 +39,7 @@ class HelloWorldModel extends Observable {
     getPlace(place) {
 
         googlePlacesAutocomplete.getPlaceById(place.placeId).then((place) => {
-            dialogs.alert("Frmatted address :" + place.formattedAddress + "\n latitude: " + place.latitude + "\n longitude: " + place.longitude)
+            Dialogs.alert("Frmatted address :" + place.formattedAddress + "\n latitude: " + place.latitude + "\n longitude: " + place.longitude)
                 .then(function () { });
         }, error => {
             console.log(error)
