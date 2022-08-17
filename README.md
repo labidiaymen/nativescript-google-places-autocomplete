@@ -19,7 +19,7 @@ Create and grap your Api key from  [https://developers.google.com/maps/documenta
 ## Installation
 
 ```javascript
-tns plugin add nativescript-google-places-autocomplete
+npm install nativescript-google-places-autocomplete
 ```
 
 ## Usage 

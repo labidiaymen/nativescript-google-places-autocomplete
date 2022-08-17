@@ -22,11 +22,6 @@
         "noImplicitUseStrict": false,
         "noFallthroughCasesInSwitch": true,
         "baseUrl": ".",
-        "paths": {
-            "*": [
-                "./node_modules/*"
-            ]
-        },
         "moduleResolution": "node"
     },
     "exclude": [
