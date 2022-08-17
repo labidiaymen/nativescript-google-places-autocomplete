@@ -21,6 +21,7 @@ class HelloWorldModel extends Observable {
                 let list = <ListView>this.page.getViewById("places_list");
                 googlePlacesAutocomplete.search(params, 'us')
                     .then((places: any) => {
+                        console.log('results:', places);
                         this.items = [];
                         this.items = places;
                         this.set('items', this.items);
@@ -48,6 +49,7 @@ class HelloWorldModel extends Observable {
 
     public searchFieldChanged(args: EventData) {
         var tmptextfield = <TextField>args.object
+        console.log(tmptextfield.text);
         this.searchInput
             .next(tmptextfield.text)
     }

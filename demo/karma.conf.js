@@ -1,8 +1,8 @@
-module.exports = function(config) {
-  config.set({
+module.exports = function (config) {
+  const options = {
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: 'app',
 
 
     // frameworks to use
@@ -10,10 +10,8 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
 
-    // list of files / patterns to load in the browser
-    files: [
-      'app/**/*.js'
-    ],
+    // list of files / patterns to load in the browser. Leave empty for webpack projects
+    // files: [],
 
 
     // list of files to exclude
@@ -32,6 +30,18 @@ module.exports = function(config) {
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress'],
 
+    // configure optional coverage, enable via --env.codeCoverage
+    coverageReporter: {
+      dir: require('path').join(__dirname, './coverage'),
+      subdir: '.',
+      reporters: [
+        { type: 'html' },
+        { type: 'text-summary' }
+      ]
+    },
+
+    // web server hostname
+    hostname: '127.0.0.1',
 
     // web server port
     port: 9876,
@@ -72,6 +82,12 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true
-  });
-};
+    singleRun: false
+  };
+
+  if(config._NS && config._NS.env && config._NS.env.codeCoverage) {
+    options.reporters = (options.reporters || []).concat(['coverage']);
+  }
+
+  config.set(options);
+}
